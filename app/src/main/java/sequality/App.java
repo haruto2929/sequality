@@ -12,7 +12,7 @@ public class App {
     return x + y;
   }
 
-  public int average(int x, int y) {
+  public double average(int x, int y) {
     return (x + y) / 2;
   }
 
