@@ -12,7 +12,12 @@ public class App {
     return x + y;
   }
 
+  public int average(int x, int y) {
+    return (x + y) / 2;
+  }
+
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
+    System.out.print("Sum of 2 and 3 is " + new App().sum(2, 3) + ".Average is " + new App().average(2, 3) + ".");
   }
 }
