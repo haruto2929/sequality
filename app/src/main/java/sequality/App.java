@@ -12,8 +12,8 @@ public class App {
     return x + y;
   }
 
-  public double average(int x, int y) {
-    return (x + y) / 2;
+  public double average(double x, double y) {
+    return (x + y) / 2.0;
   }
 
   public static void main(String[] args) {
