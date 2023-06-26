@@ -12,5 +12,7 @@ public class AppTest {
     App classUnderTest = new App();
     // assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     assertEquals("Hello World!", classUnderTest.getGreeting());
+    int expected = 5;
+    assertEquals(expected, classUnderTest.sum(2, 3));
   }
 }
