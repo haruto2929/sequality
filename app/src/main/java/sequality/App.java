@@ -8,16 +8,14 @@ public class App {
     return "Hello World!";
   }
 
-  public int sum(int x, int y) {
-    return x + y;
-  }
-
-  public double average(double x, double y) {
-    return (x + y) / 2.0;
-  }
-
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
-    System.out.print("Sum of 2 and 3 is " + new App().sum(2, 3) + ".Average is " + new App().average(2, 3) + ".");
+    System.out.println(
+        "Sum of 2 and 3 is " + new Calculate().sum(2, 3) + ". Average is " + new Calculate().average(2, 3) + ".");
+    System.out.println(
+        "Sum of 1 to 10 is " + new Calculate().sum(1, 10) + ". Average is " + new Calculate().average(1, 10) + ".");
+    System.out.println(
+        "Sum of odd of 1 to 10 is " + new Calculate().sumodd(1, 10) + ". Sum of even is "
+            + new Calculate().sumeven(1, 10) + ".");
   }
 }
